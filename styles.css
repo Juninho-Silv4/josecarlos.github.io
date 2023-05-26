@@ -1,0 +1,258 @@
+/*Configuração da página*/
+
+body {
+    background-color: rgb(231, 74, 74);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(97, 94, 94);
+    border: 1px white;
+}
+
+.rodape {
+    margin-top: 20px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    position: fixed;
+    width: 100%;
+    font-size: 18px;
+}
+
+.link_footer:hover {
+    animation: shiny 1s infinite;
+}
+
+/*Estilos dos conteúdos*/
+
+.imagem {
+    width: 300px;
+    margin-top: 30px;
+    border: 3px solid black;
+    border-style: outset;
+    border-radius: 50%;
+    box-shadow: inset;
+    animation: shinyImg 1s infinite;
+}
+
+.imagem:hover {
+    animation: pulse 1s infinite;
+    display: table;
+    margin-top: 30px;
+    animation-direction: normal;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+.container {
+    background-image: linear-gradient( to right, red, orange, yellow, green, turquoise, indigo, violet);
+    width: 1000px;
+    margin: auto;
+    vertical-align: middle;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+    padding-bottom: 0.1px;
+    box-shadow: 2px 2px 2px 1px black;
+    border: 3px solid black;
+    border-style: outset;
+}
+
+.container_topo {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container_centro {
+    margin: 30px;
+    border-radius: 15px;
+    justify-content: left;
+    text-align: left;
+    padding: 30px;
+    border: 3px solid black;
+    border-style: outset;
+}
+
+.efeito-vidro {
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/*Efeito das escritas*/
+
+.title {
+    text-align: right;
+    font-weight: bold;
+}
+
+h1:hover {
+    animation: shiny 0.9s infinite;
+}
+
+
+.coment {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.lista {
+    font-size: 20px;
+    list-style-type: none;
+}
+.lista:hover {
+    animation: shinyRed 0.9s infinite;
+}
+
+.title_box {
+    text-align: center;
+}
+
+
+.list_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+/*-------------Efeitos de animação--------------*/ 
+
+
+/*Pulso da Imagem*/
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+      -webkit-filter: brightness(100%);
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+      -webkit-filter: brightness(110%);
+    }
+}
+  
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      filter: brightness(100%);
+    }
+    100% {
+      transform: scale(1.1);
+      filter: brightness(110%);
+    }
+}
+
+/*Brilho das coisas*/
+@-webkit-keyframes shiny {
+    0% {
+      -webkit-text-shadow: 0 0 12px black;
+      
+    }
+    50% {
+        -webkit-text-shadow:  0 0 18px black;
+      }
+    100% {
+      -webkit-text-shadow:  0 0 24px black;
+    }
+}
+  
+@keyframes shiny {
+    0% {
+      text-shadow: 0 0 12px black;
+    }
+    50% {
+        text-shadow: 0 0 18px black;
+    }
+    50% {
+        text-shadow: 0 0 24px black;
+    }
+}
+
+@-webkit-keyframes shinyImg {
+    0% {
+      -webkit-box-shadow: 0 0 12px black;
+      
+    }
+    50% {
+        -webkit-box-shadow:  0 0 18px black;
+      }
+    100% {
+      -webkit-box-shadow:  0 0 24px black;
+    }
+}
+  
+@keyframes shinyImg {
+    0% {
+      box-shadow: 0 0 12px black;
+    }
+    50% {
+        box-shadow: 0 0 18px black;
+    }
+    50% {
+        box-shadow: 0 0 24px black;
+    }
+}
+
+@-webkit-keyframes shinyRed {
+    0% {
+      -webkit-text-shadow: 0 0 12px rgb(255, 2, 2);
+      
+    }
+    50% {
+        -webkit-text-shadow:  0 0 18px rgb(255, 2, 2);
+      }
+    100% {
+      -webkit-text-shadow:  0 0 24px rgb(255, 2, 2);
+    }
+}
+  
+@keyframes shinyRed {
+    0% {
+      text-shadow: 0 0 12px rgb(255, 2, 2);
+    }
+    50% {
+        text-shadow: 0 0 18px rgb(255, 2, 2);
+    }
+    50% {
+        text-shadow: 0 0 24px rgb(255, 2, 2);
+    }
+}
+
+/*Margens situacionais*/
+
+.marginbottom50{
+    line-height: 18px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.noticia_machete {
+    text-align: center;
+    width: 800px;
+    margin: auto;
+}
+
+.voluta {
+    width: 100px;
+}
+
+.centro {
+    text-align: center;
+}
