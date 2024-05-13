@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesJS.css">
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo: 
+                <input type="radio" name="radsex" id="masc" value="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem" value="fem">
+                <label for="fem">Feminino</label>
+                <input type="radio" name="radsex" id="outro" value="outro">
+                <label for="outro">Outro</label>
+            </p>
+            <p id="botao">
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para verificar o resultado!
+            <img id="foto" >
+        </div>
+        <a href="../../index.html" target="_self">
+            <P>
+                Voltar
+            </P>
+        </a>
+    </section>
+    <footer class="rodape">
+        <p>&copy;CursoemVideo | Desenvolvido por&nbsp;
+        <a href="https://www.linkedin.com/in/jose-carlos-bras-da-silva-junior-004828214/" target="_blank" class="link_footer"> José Carlos (Juninho)</a>, 2024.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

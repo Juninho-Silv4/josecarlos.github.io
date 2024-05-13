@@ -39,7 +39,6 @@ a:hover {
     border-style: outset;
     border-radius: 50%;
     box-shadow: inset;
-    animation: shinyImg 1s infinite;
 }
 
 .imagem:hover {
@@ -76,20 +75,20 @@ a:hover {
 }
 
 .container_centro {
+    display: flex;
     margin: 30px;
-    border-radius: 15px;
-    justify-content: left;
-    text-align: left;
+    justify-content: space-evenly;
     padding: 30px;
-    border: 3px solid black;
-    border-style: outset;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: flex-start;
 }
 
 .efeito-vidro {
     background: rgba( 255, 255, 255, 0.35 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -120,9 +119,10 @@ h1:hover {
 }
 
 .title_box {
-    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
 }
-
 
 .list_wrapper {
     display: flex;
@@ -131,6 +131,19 @@ h1:hover {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-around;
+}
+
+.list_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+img#imagem_tam {
+    width: 600px;
 }
 
 /*-------------Efeitos de animação--------------*/ 
